@@ -20,3 +20,4 @@ Project is created with:
 ![screenshot](./screenshots/landing-page-screenshot.jpeg)
 
 ## Link
+https://rhinzz.github.io/gamaloka-landing-page-v2/

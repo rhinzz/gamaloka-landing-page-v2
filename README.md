@@ -17,6 +17,6 @@ Project is created with:
 * Javascript
 	
 ## Screenshot
-
+![screenshot](./screenshots/landing-page-screenshot.jpeg)
 
 ## Link

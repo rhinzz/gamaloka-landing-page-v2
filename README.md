@@ -6,3 +6,6 @@ Updated landing page for Gamaloka.com
 * [Technologies](#technologies)
 * [Screenshot](#screenshot)
 * [Link](#link)
+
+## General info
+This is an updated landing page for Gamaloka.com, using HTML, CSS, Bootstrap and Javascript.

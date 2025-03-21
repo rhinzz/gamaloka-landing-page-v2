@@ -9,3 +9,9 @@ Updated landing page for Gamaloka.com
 
 ## General info
 This is an updated landing page for Gamaloka.com, using HTML, CSS, Bootstrap and Javascript.
+
+## Technologies
+Project is created with:
+* HTML
+* CSS (Bootstrap)
+* Javascript

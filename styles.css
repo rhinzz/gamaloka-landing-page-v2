@@ -694,7 +694,7 @@ footer {
         width: 80%;
     }
 
-    .testimony-item.hide {
+    .testimony-item.hide, .job-item.hide {
         display: flex;
     }
 

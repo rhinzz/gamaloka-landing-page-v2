@@ -312,12 +312,6 @@ main {
     margin: 2rem auto;
 }
 
-.tutorial-image-container {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
 .tutorial-item-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -619,6 +613,10 @@ footer {
         justify-content: center;
     }
 
+    .tutorial-container img {
+        width: 60%;
+    }
+
     .job-container {
         grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
     }
@@ -694,13 +692,18 @@ footer {
         width: 80%;
     }
 
-    .testimony-item.hide, .job-item.hide {
+    .testimony-item.hide,
+    .job-item.hide {
         display: flex;
     }
 
     .job-container,
     .testimony-container {
         grid-template-columns: repeat(auto-fit, minmax(26.5rem, 1fr));
+    }
+
+    .tutorial-container img {
+        width: 60%;
     }
 
     .accordion-item h2 button {
@@ -740,6 +743,10 @@ footer {
 }
 
 @media (min-width: 1280px) {
+    main{
+        margin: 0 2.5rem;
+    }
+
     .tutorial-container {
         display: flex;
         flex-direction: row-reverse;

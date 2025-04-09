@@ -104,6 +104,10 @@ main {
     position: relative;
 }
 
+.text, .image{
+    position: relative;
+}
+
 .hero .text {
     margin-bottom: 1.5rem;
     z-index: 1;

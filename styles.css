@@ -106,6 +106,7 @@ main {
 
 .hero .text {
     margin-bottom: 1.5rem;
+    z-index: 1;
 }
 
 .hero .text h1 {
@@ -122,18 +123,19 @@ main {
 }
 
 .btn.primary,
-.btn.btn.primary:active {
+.btn.primary.cv:active {
     border-radius: 0.5rem;
     border: 0.047rem solid #FFF4E9;
     background-color: #FF8B13;
     box-shadow: 0rem 0rem 0.5rem 0rem rgba(255, 139, 19, 0.32);
     color: white;
-    padding: 0.75rem 2rem;
 }
 
 .btn.primary.cv {
+    padding: 0.75rem 2rem;
     margin-top: 0;
 }
+
 
 .btn.secondary,
 .btn.secondary:active {
@@ -186,14 +188,11 @@ main {
     -ms-user-select: none;
 }
 
-.hero .image img {
-    z-index: 1;
-}
-
 .left-bottom,
 .right-bottom,
 .right-top {
     position: absolute;
+    z-index: 0;
 }
 
 .left-bottom {
@@ -595,7 +594,12 @@ footer {
         font-size: 2.5rem;
     }
 
-    .image {
+    .text, .image {
+        position: relative;
+        z-index: 1;
+    }
+
+    .hero .image {
         display: flex;
         justify-content: center;
     }
@@ -743,7 +747,7 @@ footer {
 }
 
 @media (min-width: 1280px) {
-    main{
+    main {
         margin: 0 2.5rem;
     }
 

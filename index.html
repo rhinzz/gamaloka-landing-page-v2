@@ -54,7 +54,7 @@
             </div>
         </div>
     </nav>
-    
+
     <main>
         <div class="main-wrapper">
             <!-- Hero -->
@@ -273,7 +273,10 @@
                     <a class="btn primary" href="#" role="button">Saya Mau Loker</a>
                 </div>
                 <div class="tutorial-container">
-                    <img src="./assets/tutorial-1.png" alt="tutorial">
+                    <img src="./assets/tutorial-1.png" alt="tutorial" id="tut-1">
+                    <img src="./assets/tutorial-2.png" alt="tutorial" id="tut-2">
+                    <img src="./assets/tutorial-3.png" alt="tutorial" id="tut-3">
+                    <img src="./assets/tutorial-4.png" alt="tutorial" id="tut-4">
                     <div class="tutorial-item-container">
                         <div class="tutorial-item active" id="tut-1">
                             <h3>1</h3>
@@ -666,25 +669,34 @@
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             const tutorialItems = document.querySelectorAll(".tutorial-item");
-            const tutorialImage = document.querySelector(".tutorial-container img");
+            const tutorialImages = document.querySelectorAll(".tutorial-container > img");
 
             tutorialItems.forEach(item => {
                 item.addEventListener("click", function () {
-                    // Remove active class
+                    // Remove active class from all items
                     tutorialItems.forEach(el => el.classList.remove("active"));
 
                     // Add active class to the clicked item
                     this.classList.add("active");
 
-                    // Extract the ID number
-                    const idNumber = this.id.split("-")[1];
+                    // Get the id of the active item
+                    const activeId = this.id;
 
-                    // Update image
-                    tutorialImage.src = `./assets/tutorial-${idNumber}.png`;
+                    // Loop through all images and toggle their visibility
+                    tutorialImages.forEach(img => {
+                        if (img.id === activeId) {
+                            img.style.display = "block";
+                        } else {
+                            img.style.display = "none";
+                        }
+                    });
                 });
             });
+
+            document.querySelector(".tutorial-item.active")?.click();
         });
     </script>
+
 </body>
 
 </html>

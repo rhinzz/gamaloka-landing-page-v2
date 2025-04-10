@@ -19,41 +19,43 @@
 
 <body>
     <header>
-            <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
-                <div class="container-fluid">
-                    <!-- Logo -->
-                    <a href="https://gamaloka.com/"><img src="./assets/gamaloka-logo.png" alt="gamaloka-logo" class="logo"></a>
-                    <div class="collapse navbar-collapse">
-                        <div class="btn-box">
-                            <a class="btn btn-light" role="button" aria-disabled="true">Cari Kerja</a>
-                            <a class="btn" role="button" aria-disabled="true">Cari Karyawan</a>
-                        </div>
-                    </div>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Beranda</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Tentang Kami</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Loker</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Blog</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Event</a>
-                            </li>
-                        </ul>
+        <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <!-- Logo -->
+                <a href="https://gamaloka.com/"><img src="./assets/gamaloka-logo.png" alt="gamaloka-logo"
+                        class="logo"></a>
+                <div class="collapse navbar-collapse">
+                    <div class="btn-box">
+                        <a class="btn btn-light" role="button" aria-disabled="true">Cari Kerja</a>
+                        <a class="btn" role="button" aria-disabled="true">Cari Karyawan</a>
                     </div>
                 </div>
-            </nav>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Beranda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Tentang Kami</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Loker</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Event</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
     <main>
         <section class="main-wrapper">
@@ -77,12 +79,61 @@
                         <p class="partner">
                             Partner Gamaloka:
                         </p>
-                        <div class="merchant-box">
-                            <img src="./assets/merchant/1.png" alt="partner-1">
-                            <img src="./assets/merchant/2.png" alt="partner-2">
-                            <img src="./assets/merchant/3.png" alt="partner-3">
-                            <img src="./assets/merchant/4.png" alt="partner-4">
+                        <div id="merchantCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="d-flex gap-3">
+                                        <img src="./assets/merchant/1.png" alt="partner-1">
+                                        <img src="./assets/merchant/2.png" alt="partner-2">
+                                        <img src="./assets/merchant/3.png" alt="partner-3">
+                                        <img src="./assets/merchant/4.png" alt="partner-4">
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="d-flex gap-3">
+                                        <img src="./assets/merchant/5.png" alt="partner-5">
+                                        <img src="./assets/merchant/6.png" alt="partner-6">
+                                        <img src="./assets/merchant/7.png" alt="partner-7">
+                                        <img src="./assets/merchant/8.png" alt="partner-8">
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="d-flex gap-3">
+                                        <img src="./assets/merchant/9.png" alt="partner-9">
+                                        <img src="./assets/merchant/10.png" alt="partner-10">
+                                        <img src="./assets/merchant/11.png" alt="partner-11">
+                                        <img src="./assets/merchant/12.png" alt="partner-12">
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="d-flex gap-3">
+                                        <img src="./assets/merchant/13.png" alt="partner-13">
+                                        <img src="./assets/merchant/14.png" alt="partner-14">
+                                        <img src="./assets/merchant/15.png" alt="partner-15">
+                                        <img src="./assets/merchant/16.png" alt="partner-16">
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <div class="d-flex gap-3">
+                                        <img src="./assets/merchant/17.png" alt="partner-17">
+                                        <img src="./assets/merchant/18.png" alt="partner-18">
+                                        <img src="./assets/merchant/19.png" alt="partner-19">
+                                        <img src="./assets/merchant/20.png" alt="partner-20">
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <div class="d-flex gap-3">
+                                        <img src="./assets/merchant/21.png" alt="partner-21">
+                                        <img src="./assets/merchant/22.png" alt="partner-22">
+                                        <img src="./assets/merchant/23.png" alt="partner-23">
+                                        <img src="./assets/merchant/24.png" alt="partner-24">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+
                     </div>
                     <div class="image">
                         <img src="./assets/hero.png" alt="hero-image" class="user-drag: none;">

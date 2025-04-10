@@ -162,16 +162,22 @@ main {
     margin-bottom: 1rem;
 }
 
-.merchant-box {
-    display: flex;
-    align-items: center;
-    flex-grow: 0;
-    gap: 1rem;
+#merchantCarousel {
+    width: 100%;
+    margin-top: 0;
 }
 
-.merchant-box img {
+#merchantCarousel .carousel-inner {
+    margin: 0;
+}
+
+#merchantCarousel img {
     filter: grayscale(100%);
     height: 3.125rem;
+}
+
+#merchantCarousel .carousel-item {
+    transition: transform 1s ease-in-out;
 }
 
 .image img {
@@ -613,7 +619,11 @@ footer {
         justify-content: center;
     }
 
-    .merchant-box img {
+    #merchantCarousel{
+        width: 400px;
+    }
+
+    #merchantCarousel img {
         height: 4rem;
     }
 
@@ -698,7 +708,11 @@ footer {
         width: 110%;
     }
 
-    .merchant-box img {
+    #merchantCarousel {
+        width: 36rem;
+    }
+
+    #merchantCarousel img {
         height: 6rem;
     }
 
